@@ -1,0 +1,56 @@
+{
+  "train_csv": "/Users/adrian/Documents/BachelorArbeit/testrun/src/pfann/lists/dry_train.txt",
+  "validate_csv": "/Users/adrian/Documents/BachelorArbeit/testrun/src/pfann/lists/dry_validate.txt",
+  "music_dir": "",
+  "model_dir": "/Users/adrian/Documents/BachelorArbeit/testrun/checkpoints/dry_run/pfann_model",
+  "cache_dir": "/Users/adrian/Documents/BachelorArbeit/testrun/checkpoints/dry_run/pfann_cache",
+  "batch_size": 32,
+  "shuffle_size": null,
+  "fftconv_n": 32768,
+  "sample_rate": 8000,
+  "stft_n": 1024,
+  "stft_hop": 256,
+  "n_mels": 256,
+  "f_min": 300,
+  "f_max": 4000,
+  "segment_size": 1,
+  "hop_size": 0.5,
+  "time_offset": 1.2,
+  "pad_start": 0,
+  "epoch": 2,
+  "lr": 0.0001,
+  "tau": 0.05,
+  "noise": {
+    "train": "/Users/adrian/Documents/BachelorArbeit/testrun/src/pfann/lists/musan_train.txt",
+    "validate": null,
+    "dir": "",
+    "snr_max": 10,
+    "snr_min": 0
+  },
+  "micirp": {
+    "train": null,
+    "validate": null,
+    "dir": "",
+    "length": 0.5
+  },
+  "air": {
+    "train": null,
+    "validate": null,
+    "dir": "",
+    "length": 1
+  },
+  "cutout_min": 0.1,
+  "cutout_max": 0.5,
+  "model": {
+    "d": 128,
+    "h": 1024,
+    "u": 32,
+    "fuller": true,
+    "conv_activation": "ReLU"
+  },
+  "indexer": {
+    "index_factory": "IVF200,PQ64x8np",
+    "top_k": 100,
+    "frame_shift_mul": 1
+  }
+}

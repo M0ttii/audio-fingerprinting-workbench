@@ -1,0 +1,48 @@
+# cache files
+__pycache__
+caches
+
+# output files
+*.mp3
+*.wav
+
+# log files
+dlyt.txt
+runs
+
+# the list is too long
+configs/*.csv
+lists/*
+!lists/readme.md
+
+# model files
+*.pt
+out/models
+
+# database files
+db/
+out/dbs
+fastdb
+slowdb
+
+# generated queries
+out/queries
+
+# matcher results
+out/results
+
+# visualize
+*.wav.png
+*.mp3.png
+
+# compile file
+faisscputest
+seqscore
+*.exe
+*.dll
+*.exp
+*.lib
+*.obj
+
+logs/
+.DS_Store
